@@ -1,8 +1,12 @@
 # config valid only for current version of Capistrano
 lock '3.4.0'
 
-set :application, 'symfony-demo'
+set :application, 'test-fansible'
 set :repo_url, 'https://github.com/traxair/symfony-demo.git'
+
+# For symphony 2
+set :symfony_directory_structure, 2
+set :sensio_distribution_version, 4
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
